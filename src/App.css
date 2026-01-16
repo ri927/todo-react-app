@@ -1,0 +1,143 @@
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.todo-date {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+
+.todo-date:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.add-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #535bf2;
+}
+
+.todo-stats {
+  text-align: right;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-item.overdue {
+  border-left: 3px solid #ff4757;
+}
+
+.todo-item.overdue .todo-due-date {
+  color: #ff4757;
+}
+
+.todo-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.todo-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.todo-text {
+  word-break: break-word;
+}
+
+.todo-due-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.delete-button {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff3344;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .todo-item {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
